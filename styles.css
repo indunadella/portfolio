@@ -375,11 +375,11 @@ section{
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
 }
-.progress-line.html span::after{
+.progress-line.html5 span::after{
     content: "80%";
 }
-.progress-line.css span::after{
-    content: "65%";
+.progress-line.css3 span::after{
+    content: "75%";
 }
 .progress-line.java span::after{
     content: "85%";
@@ -456,6 +456,8 @@ section{
 .path-2{animation: animate-path2 1s 1s linear forwards}
 .path-3{animation: animate-path3 1s 1s linear forwards}
 .path-4{animation: animate-path4 1s 1s linear forwards}
+.path-5{animation: animate-path5 1s 1s linear forwards}
+.path-6{animation: animate-path6 1s 1s linear forwards}
 
 @keyframes animate-path1{
     100%{
@@ -475,6 +477,16 @@ section{
     }
 }
 
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 100.4;
+    }
+}
+@keyframes animate-path5{
+    100%{
+        stroke-dashoffset: 100.4;
+    }
+}
 @keyframes animate-path4{
     100%{
         stroke-dashoffset: 100.4;
