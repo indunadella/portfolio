@@ -342,36 +342,65 @@ section{
     width: 0%; /
     transition: width 1s ease-in-out;
 }
-.html {
+.html span{
     width: 80%;
     background-color: #e4280e;
 }
 
-.css {
+.css span{
     width: 75%;
     background-color: #0091d1;
 }
 
-.java {
+.java span{
     width: 85%;
     background-color: #ff5722;
 }
 
-.c {
+.c span{
     width: 70%;
     background-color: #00bcd4;
 }
 
-.sql {
+.sql span{
     width: 65%;
     background-color: #9c27b0;
 }
 
-.javascript {
+.javascript span{
     width: 60%;
     background-color: #f0db4f;
 }
-
+.progress-line span::after{
+    position:absolute;
+    padding:1px 8px;
+    backgrounf-color:#000;
+    color:white;
+    font-size:15px;
+    top:-20px;
+    right:-20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity:0;
+}
+    .html span::after{
+        content:"80%;
+    }
+    .css span::after{
+        content:"75%";
+    }
+    .java span::after{
+        content:"85%";
+    }
+    .c span::after{
+        content:"70%";
+    }
+    .sql span::after{
+        content:"60%";
+    }
+    .javascript span::after{
+        content:"60%";
+    }
+    
 
 @keyframes showText{
     100%{
