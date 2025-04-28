@@ -316,6 +316,12 @@ section{
     display: flex;
     align-items: center;
 }
+.Technical-bars .bar:first-child{
+    margin-top:0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom:5px;
+}
 
 .info {
     margin-right: 10px;
@@ -335,11 +341,15 @@ section{
     border-radius: 5px;
     overflow: hidden;
 }
-
+@keyframes animate{
+    100%{
+        transform:scaleX(1);
+    }
+}
 .progress-line span {
     display: block;
     height: 100%;
-    width: 0%; /
+    width: 0%; 
     transition: width 1s ease-in-out;
 }
 .html span{
