@@ -242,6 +242,7 @@ section{
     flex-wrap: wrap;
 }
 .container1{
+    text-align: center; 
     width: 600px;
     height: 500px;
     padding: 30px 50px;
