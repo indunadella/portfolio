@@ -302,20 +302,19 @@ section{
     font-size: 25px;
 }
 .Technical-bars {
-    width: 80%; 
-    margin: 0 auto; 
+    width: 80%; /* Limit the width to 80% of the container (adjust as needed) */
+    margin: 0 auto; /* Center the progress bars horizontally */
     padding: 20px;
 }
 
 .Technical-bars .bar {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 600px; /* Set a maximum width for the bar */
     height: 40px;
     margin: 15px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .info {
@@ -330,39 +329,28 @@ section{
     background-color: #e0e0e0; /* Light gray background for the container */
     border-radius: 5px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
 }
 
 .progress-line span {
     display: block;
     height: 100%;
-    width: 0%;
+    width: 0%; /* Start width for the progress bar */
     transition: width 1s ease-in-out;
 }
 
-.progress-line .percentage {
-    position: absolute;
-    right: 10px;
-    top: -20px;
-    font-size: 14px;
-    color: #333;
-    font-weight: bold;
-}
-
-
+/* Set specific widths for each skill */
 .html {
-    width: 80%;
+    width: 90%;
     background-color: #e4280e;
 }
 
 .css {
-    width: 70%;
+    width: 80%;
     background-color: #0091d1;
 }
 
 .java {
-    width: 85%;
+    width: 75%;
     background-color: #ff5722;
 }
 
@@ -372,12 +360,12 @@ section{
 }
 
 .sql {
-    width: 65%;
+    width: 85%;
     background-color: #9c27b0;
 }
 
 .javascript {
-    width: 60%;
+    width: 80%;
     background-color: #f0db4f;
 }
 
