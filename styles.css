@@ -301,113 +301,59 @@ section{
 .bar{
     font-size:25px;
 }
-.Technical-bars .bar{
-    marging-top:40px 0;
-}
-.Technical-bars .bar:first-child{
-    margin-top:0;
-}
-.Technical-bars .bar:last-child{
-    margin-bottom:5px;
-}
-.Technical-bars .bar .info{
-    margin-bottom:5px;
-}
-.Technical-bars .bar .info span{
-    font-size:20px;
-    font-weight:500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity:0;
-}
-.Technical-bars .bar .progress-line{
-    position:relative;
-    border-radius:10px;
-    width:70%;
-    height:5px;
-    background-color:#000000;
-    transform-origin:left;
-    opacity:0;
-    animation:slideRight 1s linear forwards;
-    animation-delay:calc(.2s *var(--i));
-
-}
-@keyframes animate{
-    100%{
-        transform:scaleX(1);
-    }
-}
-.Technical-bars .bar .progress-line span{
-    height:100%;
-    background-color:cyan;
-    position:absolute;
-    border-radius:10px;
-    transform-origin:left;
-}
-.progress-line.html span{
-    width:80%;
-}
-.progress-line.css span{
-    width:75%;
-}
-.progress-line.java span{
-    width:85%;
-}
-.progress-line.c span{
-    width:70%;
-}
-.progress-line.sql span{
-    width:65%;
-}
-.progress-line.javascript span{
-    width:60%;
-}
-.progress-line span::after{
-    position:absolute;
-    padding:1px 8px;
-    background-color:#000;
-    color:white;
-    font-size:15px;
-    top:-20px;
-    right:-20px;
-    animation:showText 0.5s 1.5s linear forwards;
-    opacity:0;
-}
-.progress-line.html span::after{
-    content="80%";
-}
-.progress-line.css span::after{
-    content="75%";
+.Technical-bars .bar {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
 }
 
-.progress-line.java span::after{
-    content="85%";
+.progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: lightgray;
 }
 
-.progress-line.c span::after{
-    content="70%";
+.progress-line span {
+    display: block;
+    height: 100%;
+    width: 0%; /* Start width for the progress bar */
+    transition: width 1s ease-in-out;
 }
 
-.progress-line.sql span::after{
-    content="65%";
+/* Example for specific skills' progress */
+.html span {
+    width: 90%; /* 90% progress for HTML */
+    background-color: #e4280e;
 }
 
-.progress-line.javascript span::after{
-    content="60%";
+.css span {
+    width: 80%;
+    background-color: #0091d1;
 }
-.progress-line span::before{
-    content:"";
-    position:absolute;
-    width:0;
-    height:0;
-    border:7px solid transaparent;
-    border-bottom-width:0px;
-    border-right-width:0px;
-    border-top-color:#000;
-    top:-10px;
-    right:0;
-    animation:showtext 0.5s 1.5s linear forwards;
-    opacity:0;
-    
+
+.java span {
+    width: 75%;
+    background-color: #ff5722;
+}
+
+.c span {
+    width: 70%;
+    background-color: #00bcd4;
+}
+
+.sql span {
+    width: 85%;
+    background-color: #9c27b0;
+}
+
+.javascript span {
+    width: 80%;
+    background-color: #f0db4f;
+}
+
 @keyframes showText{
     100%{
         opacity: 1;
