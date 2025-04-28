@@ -418,7 +418,7 @@ section{
 .path-2{animation: animate-path2 1s 1s linear forwards}
 .path-3{animation: animate-path3 1s 1s linear forwards}
 .path-4{animation: animate-path4 1s 1s linear forwards}
-.path-5{animation: animate-path5 1s 1s linear forwards}
+
 
 
 @keyframes animate-path1{
@@ -444,11 +444,7 @@ section{
         stroke-dashoffset: 100.4;
     }
 }
-@keyframes animate-path5{
-    100%{
-        stroke-dashoffset: 100.4;
-    }
-}
+
 .radial-bars .percentage{
     font-size: 30px;
     margin-top: 40px;
