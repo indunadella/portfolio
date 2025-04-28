@@ -304,101 +304,82 @@ section{
 .Technical-bars {
     width: 80%; 
     margin: 0 auto; 
-    padding: 40px;
+    padding: 20px;
 }
 
 .Technical-bars .bar {
     position: relative;
     width: 100%;
-    max-width: 600px; 
+    max-width: 600px;
     height: 40px;
     margin: 15px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
+
 .info {
     margin-right: 10px;
     font-size: 16px;
 }
-.info span{
-    font-size:20px;
-    font-weight:500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity:0;
 
 .progress-line {
     position: relative;
     width: 100%;
     height: 10px;
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0; /* Light gray background for the container */
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
+
 .progress-line span {
     display: block;
     height: 100%;
-    width: 0%; 
+    width: 0%;
     transition: width 1s ease-in-out;
 }
-.html span{
+
+.progress-line .percentage {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.html {
     width: 80%;
     background-color: #e4280e;
 }
 
-.css span{
-    width: 75%;
+.css {
+    width: 70%;
     background-color: #0091d1;
 }
 
-.java span{
+.java {
     width: 85%;
     background-color: #ff5722;
 }
 
-.c span{
+.c {
     width: 70%;
     background-color: #00bcd4;
 }
 
-.sql span{
+.sql {
     width: 65%;
     background-color: #9c27b0;
 }
 
-.javascript span{
+.javascript {
     width: 60%;
     background-color: #f0db4f;
 }
-.progress-line span::after{
-    position:absolute;
-    padding:1px 8px;
-    backgrounf-color:#000;
-    color:white;
-    font-size:15px;
-    top:-20px;
-    right:-20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity:0;
-}
-    .html span::after{
-        content:"80%;
-    }
-    .css span::after{
-        content:"75%";
-    }
-    .java span::after{
-        content:"85%";
-    }
-    .c span::after{
-        content:"70%";
-    }
-    .sql span::after{
-        content:"60%";
-    }
-    .javascript span::after{
-        content:"60%";
-    }
-    
 
 @keyframes showText{
     100%{
