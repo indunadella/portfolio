@@ -349,11 +349,13 @@ section{
     width:80%;
 }
 .progress-line.css span{
-    width:75%;
-    
+    width:75%;  
 }
 .progress-line.java span{
     width:85%;
+}
+.progress-line.c span{
+    width:70%;
 }
 .progress-line.sql span{
     width:60%;
@@ -381,6 +383,9 @@ section{
 }
 .progress-line.java span::after{
     content: "85%";
+}
+.progress-line.c span::after{
+    content: "70%";
 }
 .progress-line.sql span::after{
     content: "60%";
