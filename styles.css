@@ -344,11 +344,11 @@ section{
     
     
 }
-.progress-line.html5 span{
+.progress-line.html span{
     width:80%;
 }
-.progress-line.css3 span{
-    width:65%;
+.progress-line.css span{
+    width:75%;
     
 }
 .progress-line.java span{
@@ -375,10 +375,10 @@ section{
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
 }
-.progress-line.html5 span::after{
+.progress-line.html span::after{
     content: "80%";
 }
-.progress-line.css3 span::after{
+.progress-line.css span::after{
     content: "75%";
 }
 .progress-line.java span::after{
