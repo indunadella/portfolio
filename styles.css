@@ -316,13 +316,6 @@ section{
     display: flex;
     align-items: center;
 }
-.Technical-bars .bar:first-child{
-    margin-top:0;
-}
-.Technical-bars .bar:last-child{
-    margin-bottom:5px;
-}
-
 .info {
     margin-right: 10px;
     font-size: 16px;
@@ -340,11 +333,6 @@ section{
     background-color: #e0e0e0; 
     border-radius: 5px;
     overflow: hidden;
-}
-@keyframes animate{
-    100%{
-        transform:scaleX(1);
-    }
 }
 .progress-line span {
     display: block;
