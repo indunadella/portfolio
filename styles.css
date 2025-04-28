@@ -329,7 +329,7 @@ section{
     opacity:0;
     animation:slideRight 1s linear forwards;
     animation-delay:calc(.2s *var(--i));
-    padding:50px;
+
 }
 @keyframes animate{
     100%{
