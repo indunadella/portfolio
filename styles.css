@@ -302,19 +302,15 @@ section{
     font-size: 25px;
 }
 .Technical-bars {
-    width: 80%; /* Limit the width to 80% of the container (adjust as needed) */
-    margin: 0 auto; /* Center the progress bars horizontally */
+    width: 80%;
+    margin: 0 auto; 
     padding: 20px;
 }
 
 .Technical-bars .bar {
-    position: relative;
-    width: 100%;
-    max-width: 600px; 
-    height: 40px;
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
+   
+    margin-top: 40px 0;
+    
 }
 
 .info {
