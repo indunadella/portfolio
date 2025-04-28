@@ -344,10 +344,10 @@ section{
     
     
 }
-.progress-line.html span{
+.progress-line.html5 span{
     width:80%;
 }
-.progress-line.css span{
+.progress-line.css3 span{
     width:65%;
     
 }
@@ -356,6 +356,12 @@ section{
 }
 .progress-line.c span{
     width:70%;
+}
+.progress-line.sql span{
+    width:60%;
+}
+.progress-line.javascript span{
+    width:60%;
 }
 .progress-line span::after{
     position:absolute;
@@ -381,6 +387,12 @@ section{
 .progress-line.c span::after{
     content: "70%";
 }
+.progress-line.sql span::after{
+    content: "60%";
+}
+.progress-line.javascript span::after{
+    content: "60%";
+}
 .progress-line span::before{
     content: "";
     position: absolute;
@@ -405,7 +417,7 @@ section{
     align-items:flex-start;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(40px,2fr));
-    margin-top: 50px;
+    margin-top: 80px;
     right: 100px;
     
 }
