@@ -319,13 +319,13 @@ section{
 .progress-line span {
     display: block;
     height: 100%;
-    width: 0%; /* Start width for the progress bar */
+    width: 0%;
     transition: width 1s ease-in-out;
 }
 
-/* Example for specific skills' progress */
+/* Set specific widths for each skill */
 .html span {
-    width: 90%; /* 90% progress for HTML */
+    width: 90%;
     background-color: #e4280e;
 }
 
