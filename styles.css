@@ -244,7 +244,7 @@ section{
 .container1{
     text-align: center; 
     width: 600px;
-    height: 500px;
+    height: 800px;
     padding: 30px 50px;
     margin-left: 400px;
 }
@@ -256,7 +256,6 @@ section{
     margin-bottom: 20px;
     color: purple;
     font-size: 45px;
-    padding:20px;
     
 }
 @keyframes slideRight{
