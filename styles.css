@@ -329,6 +329,7 @@ section{
     opacity:0;
     animation:slideRight 1s linear forwards;
     animation-delay:calc(.2s *var(--i));
+    padding:50px;
 }
 @keyframes animate{
     100%{
@@ -352,7 +353,7 @@ section{
     width:85%;
 }
 .progress-line.c span{
-    width780%;
+    width:80%;
 }
 .progress-line.sql span{
     width:65%;
