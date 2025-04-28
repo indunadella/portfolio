@@ -355,9 +355,6 @@ section{
 .progress-line.java span{
     width:85%;
 }
-.progress-line.c span{
-    width:70%;
-}
 .progress-line.sql span{
     width:60%;
 }
@@ -384,9 +381,6 @@ section{
 }
 .progress-line.java span::after{
     content: "85%";
-}
-.progress-line.c span::after{
-    content: "70%";
 }
 .progress-line.sql span::after{
     content: "60%";
@@ -458,7 +452,7 @@ section{
 .path-3{animation: animate-path3 1s 1s linear forwards}
 .path-4{animation: animate-path4 1s 1s linear forwards}
 .path-5{animation: animate-path5 1s 1s linear forwards}
-.path-6{animation: animate-path6 1s 1s linear forwards}
+
 
 @keyframes animate-path1{
     100%{
@@ -484,11 +478,6 @@ section{
     }
 }
 @keyframes animate-path5{
-    100%{
-        stroke-dashoffset: 100.4;
-    }
-}
-@keyframes animate-path4{
     100%{
         stroke-dashoffset: 100.4;
     }
