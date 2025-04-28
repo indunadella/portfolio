@@ -256,6 +256,7 @@ section{
     margin-bottom: 20px;
     color: purple;
     font-size: 45px;
+    padding:20px;
     
 }
 @keyframes slideRight{
